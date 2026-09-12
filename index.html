@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>นางสาวณิชมน ชลสาคร (Nitchamon Chonsakorn) | Portfolio</title>
+  <meta name="description" content="เว็บไซต์พอร์ตโฟลิโอส่วนตัวของ นางสาวณิชมน ชลสาคร นักศึกษาวิทยาลัยอาชีวศึกษานครศรีธรรมราช รวมผลงาน ทักษะความสามารถ และงานอดิเรก">
+  <meta name="keywords" content="ณิชมน ชลสาคร, นางสาวณิชมน ชลสาคร, วิทยาลัยอาชีวศึกษานครศรีธรรมราช, NVC, Portfolio, Frontend Developer, นครศรีธรรมราช">
+  <meta name="author" content="ณิชมน ชลสาคร">
+
+  <!-- Google Fonts: Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       1. Navigation Header
+       ========================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="#hero">
+          <div class="brand-logo-icon">N</div>
+          <span>Nitchamon<span class="text-gradient"> Chonsakorn</span></span>
+        </a>
+
+        <!-- Right Side: Theme Toggle & CTA -->
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="สลับโหมดสี Dark/Light">
+            <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+          </button>
+          
+          <a href="#contact" class="btn-modern-primary d-none d-sm-inline-flex py-2 px-3 fs-6">
+            <span>ติดต่อฉัน</span>
+            <i class="bi bi-arrow-right-short fs-5"></i>
+          </a>
+
+          <button class="navbar-toggler border-0 p-1 ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="เปิดเมนูนำทาง">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse order-lg-2 justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="#hero">หน้าแรก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#about">เกี่ยวกับฉัน</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#skills">ทักษะ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#portfolio">ผลงาน</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#hobbies">งานอดิเรก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#contact">ติดต่อ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       2. Hero Section
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <!-- Hero Text Details -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>🏛️ วิทยาลัยอาชีวศึกษานครศรีธรรมราช (NVC)</span>
+          </div>
+
+          <h1 class="hero-title">
+            สวัสดีค่ะ! ฉันชื่อ <br>
+            <span class="text-gradient">นางสาวณิชมน ชลสาคร</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span>ฉันเป็น</span>
+            <span class="text-gradient" id="typingText"></span>
+            <span class="typing-cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-description">
+            นักศึกษาจาก <strong>วิทยาลัยอาชีวศึกษานครศรีธรรมราช</strong> ผู้หลงใหลในการออกแบบเว็บไซต์ การสร้างสรรค์ User Interface ที่สวยงาม ลื่นไหล ใช้งานง่าย และพร้อมเปิดรับการเรียนรู้สิ่งใหม่ ๆ ในสายงานดิจิทัลและเทคโนโลยี
+          </p>
+
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3">
+            <a href="#portfolio" class="btn-modern-primary" id="heroViewProjectsBtn">
+              <i class="bi bi-grid-fill"></i>
+              <span>ดูผลงานของณิชมน</span>
+            </a>
+            <a href="#contact" class="btn-modern-secondary" id="heroContactBtn">
+              <i class="bi bi-envelope-heart-fill"></i>
+              <span>ส่งข้อความหาณิชมน</span>
+            </a>
+          </div>
+
+          <div class="hero-social-links justify-content-center justify-content-lg-start">
+            <span class="text-muted small me-2">ช่องทางติดต่อด่วน:</span>
+            <a href="mailto:nitchamon.cho@nvc.ac.th" class="social-icon-circle" aria-label="ส่งอีเมล">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="#contact" class="social-icon-circle" aria-label="สถานที่ตั้ง">
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="GitHub Profile">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="LinkedIn Profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Showcase with REAL PHOTO -->
+        <div class="col-lg-5 text-center">
+          <div class="hero-avatar-container">
+            
+            <!-- Floating Badge: Education Institution -->
+            <div class="floating-badge badge-top-right">
+              <div class="floating-badge-icon purple">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold fs-6">อาชีวศึกษานครศรีฯ</div>
+                <div class="text-muted small">นักศึกษาสายเทคโนโลยี</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge: Location -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="floating-badge-icon cyan">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold fs-6">นครศรีธรรมราช</div>
+                <div class="text-muted small">ประเทศไทย 🇹🇭</div>
+              </div>
+            </div>
+
+            <!-- Modern Squircle Avatar Frame with Real Photo -->
+            <div class="avatar-wrapper-modern">
+              <div class="avatar-inner">
+                <img src="assets/images/profile.jpg" alt="รูปโปรไฟล์ นางสาวณิชมน ชลสาคร" class="avatar-img-real">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. About Me Section
+       ========================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-person-heart"></i> เกี่ยวกับตัวฉัน</span>
+        <h2 class="section-title">รู้จักกับ <span class="text-gradient">ณิชมน ชลสาคร</span></h2>
+        <p class="section-subtitle">
+          นักศึกษาผู้มีความมุ่งมั่นและใส่ใจในทุกรายละเอียด พร้อมพัฒนาทักษะด้านการพัฒนาเว็บไซต์และงานสร้างสรรค์ดิจิทัล
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch mb-5">
+        
+        <!-- Left Column: Real Photo Card with Institution Banner -->
+        <div class="col-lg-5">
+          <div class="about-photo-card">
+            <div class="about-photo-img-box">
+              <img src="assets/images/profile.jpg" alt="ภาพถ่าย นางสาวณิชมน ชลสาคร" class="about-photo-img">
+              <div class="about-photo-overlay-tag">
+                <i class="bi bi-patch-check-fill text-info"></i>
+                <span>นางสาวณิชมน ชลสาคร</span>
+              </div>
+            </div>
+            <div class="about-photo-footer">
+              <div class="institution-pill mb-2">
+                <i class="bi bi-building"></i>
+                <span>วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+              </div>
+              <p class="text-muted small mb-0">
+                <i class="bi bi-geo-fill text-danger me-1"></i> นครศรีธรรมราช, ประเทศไทย
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Story & Info Details -->
+        <div class="col-lg-7">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="h4 fw-bold mb-3">
+                <i class="bi bi-quote text-primary me-2"></i>เรียนรู้ด้วยใจ สร้างสรรค์สิ่งใหม่เพื่อพัฒนาตนเอง
+              </h3>
+              <p class="text-muted mb-4 leading-relaxed">
+                สวัสดีค่ะ ฉันชื่อ <strong>นางสาวณิชมน ชลสาคร</strong> (นุ่น) กำลังศึกษาอยู่ที่ <strong>วิทยาลัยอาชีวศึกษานครศรีธรรมราช</strong> มีความสนใจและตั้งใจศึกษาด้านการสร้างเว็บไซต์ คอมพิวเตอร์กราฟิก และการออกแบบส่วนติดต่อผู้ใช้ (UI/UX) ณิชมนชอบนำไอเดียสร้างสรรค์มาประยุกต์ใช้ในการเขียนโค้ดและสร้างผลงานที่สวยงาม ตอบโจทย์ผู้ใช้งานจริง
+              </p>
+
+              <!-- Personal Info Grid with EXACT requested info -->
+              <div class="row g-3 pt-2">
+                
+                <div class="col-sm-6">
+                  <div class="about-info-item">
+                    <i class="bi bi-person-badge-fill"></i>
+                    <span class="about-info-label">ชื่อ-สกุล:</span>
+                    <span class="text-muted">นางสาวณิชมน ชลสาคร</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="about-info-item">
+                    <i class="bi bi-emoji-smile-fill"></i>
+                    <span class="about-info-label">ชื่อเล่น:</span>
+                    <span class="fw-bold text-primary">นุ่น (Nun)</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="about-info-item">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <span class="about-info-label">การศึกษา:</span>
+                    <span class="text-muted fw-semibold">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="about-info-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span class="about-info-label">ที่อยู่:</span>
+                    <span class="text-muted">นครศรีธรรมราช, ประเทศไทย</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="about-info-item">
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <span class="about-info-label">อีเมล:</span>
+                    <a href="mailto:nitchamon.cho@nvc.ac.th" class="text-primary text-decoration-none small fw-semibold">nitchamon.cho@nvc.ac.th</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top d-flex gap-3 flex-wrap">
+              <a href="#skills" class="btn-modern-primary py-2 px-4 fs-6">
+                <span>ดูทักษะความสามารถ</span>
+                <i class="bi bi-lightning-charge-fill"></i>
+              </a>
+              <a href="#hobbies" class="btn-modern-secondary py-2 px-4 fs-6">
+                <span>ดูงานอดิเรก &amp; สิ่งที่ชอบ</span>
+                <i class="bi bi-heart-fill text-danger"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Animated Counters Row -->
+      <div class="row g-3 text-center" id="statsSection">
+        <div class="col-6 col-md-3">
+          <div class="glass-card about-card-stat">
+            <div class="stat-number text-gradient" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">ความมุ่งมั่นตั้งใจ</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="glass-card about-card-stat">
+            <div class="stat-number text-gradient" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">โปรเจกต์และชิ้นงาน</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="glass-card about-card-stat">
+            <div class="stat-number text-gradient" data-target="12" data-suffix="+">0</div>
+            <div class="stat-label">ทักษะและโปรแกรมที่ใช้</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="glass-card about-card-stat">
+            <div class="stat-number text-gradient" data-target="99" data-suffix="%">0</div>
+            <div class="stat-label">พร้อมเรียนรู้สิ่งใหม่เสมอ</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. Skills & Technologies Section
+       ========================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-cpu-fill"></i> ทักษะความสามารถ</span>
+        <h2 class="section-title">ความเชี่ยวชาญ &amp; <span class="text-gradient">เทคโนโลยีที่ใช้</span></h2>
+        <p class="section-subtitle">
+          พัฒนาทักษะการสร้างเว็บและงานออกแบบตามหลักสูตรและมาตรฐานการทำงานจริง
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Web Development Skills -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="floating-badge-icon purple">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">Web Development (การพัฒนาเว็บไซต์)</h3>
+                <p class="text-muted small mb-0">โครงสร้างเว็บ สไตล์ และการตอบสนองทุกหน้าจอ</p>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill-meta">
+                <span><i class="bi bi-filetype-html me-2 text-danger"></i>HTML5 &amp; Semantic Elements</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill-meta">
+                <span><i class="bi bi-filetype-css me-2 text-primary"></i>CSS3 &amp; Modern Flexbox / Grid</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill-meta">
+                <span><i class="bi bi-bootstrap-fill me-2" style="color: #7952b3;"></i>Bootstrap 5 &amp; Responsive Web</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill-meta">
+                <span><i class="bi bi-filetype-js me-2 text-warning"></i>JavaScript (DOM Manipulation &amp; Events)</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-box mb-0">
+              <div class="skill-meta">
+                <span><i class="bi bi-git me-2 text-danger"></i>Git &amp; GitHub Version Control</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- UI/UX & Creative Tools -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="floating-badge-icon pink">
+                  <i class="bi bi-bezier2"></i>
+                </div>
+                <div>
+                  <h3 class="h5 fw-bold mb-1">Graphic Design &amp; UI/UX</h3>
+                  <p class="text-muted small mb-0">เครื่องมือออกแบบและสื่อสร้างสรรค์ดิจิทัล</p>
+                </div>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-meta">
+                  <span>Figma (UI Design &amp; Prototype)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-meta">
+                  <span>Adobe Photoshop / Illustrator</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-meta">
+                  <span>Canva Pro &amp; Social Media Artwork</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modern Stack Pills -->
+            <div class="mt-4 pt-3 border-top">
+              <h4 class="h6 fw-bold mb-3 text-muted">ทักษะเพิ่มเติม:</h4>
+              <div class="d-flex flex-wrap">
+                <span class="tool-chip"><i class="bi bi-check2-circle text-success"></i> Responsive Layout</span>
+                <span class="tool-chip"><i class="bi bi-check2-circle text-success"></i> Web Design System</span>
+                <span class="tool-chip"><i class="bi bi-check2-circle text-success"></i> Color Theory</span>
+                <span class="tool-chip"><i class="bi bi-check2-circle text-success"></i> Presentation &amp; Slides</span>
+                <span class="tool-chip"><i class="bi bi-check2-circle text-success"></i> Teamwork &amp; Collaboration</span>
+                <span class="tool-chip"><i class="bi bi-check2-circle text-success"></i> Problem Solving</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. Featured Projects Section
+       ========================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      
+      <div class="text-center mb-4">
+        <span class="section-tag"><i class="bi bi-collection-fill"></i> แกลเลอรีผลงาน</span>
+        <h2 class="section-title">ผลงานที่ภาคภูมิใจ <span class="text-gradient">(Featured Projects)</span></h2>
+        <p class="section-subtitle">
+          ตัวอย่างโปรเจกต์ที่ออกแบบและพัฒนาจริง โดยให้ความสำคัญกับความสวยงาม การตอบสนองที่ดี และการใช้งานจริง
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-nav-tabs">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="filter-btn" data-filter="web">เว็บแอปพลิเคชัน (Web Apps)</button>
+        <button class="filter-btn" data-filter="uiux">ดีไซน์ UI/UX</button>
+        <button class="filter-btn" data-filter="creative">โปรเจกต์สร้างสรรค์</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="row g-4" id="projectGrid">
+        
+        <!-- Project 1: E-Commerce Dashboard -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="web">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-ecommerce.svg" alt="ภาพตัวอย่าง E-Commerce Analytics Dashboard" class="project-img">
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" title="ดูรายละเอียด" onclick="openProjectModal('NovaCommerce SaaS Dashboard', 'เว็บแอปพลิเคชัน (Web App)', 'ระบบแดชบอร์ดบริหารจัดการร้านค้าออนไลน์และการเงินแบบครบวงจร แสดงผลสถิติยอดขาย ออเดอร์ และกราฟวิเคราะห์แบบเรียลไทม์ พร้อมโหมดสลับธีม Dark/Light และการจัดการสต็อกสินค้า', 'HTML5,CSS3,Bootstrap 5,JavaScript,Chart.js', 'assets/images/project-ecommerce.svg')">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="#contact" class="overlay-btn" title="สอบถามโปรเจกต์นี้">
+                  <i class="bi bi-chat-text-fill"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Web Application</div>
+              <h3 class="project-title">NovaCommerce SaaS Analytics</h3>
+              <p class="project-text">
+                ระบบจัดการร้านค้าออนไลน์พร้อม Dashboard วิเคราะห์ยอดขายและพฤติกรรมลูกค้า ออกแบบเน้นความชัดเจนของข้อมูลและใช้งานง่าย
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Bootstrap 5</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Charts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Cafe & Coffee Finder -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="uiux">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-cafe.svg" alt="ภาพตัวอย่าง Cafe Explorer Web App" class="project-img">
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" title="ดูรายละเอียด" onclick="openProjectModal('SlowBar & Nakhon Cafe Explorer', 'ดีไซน์ UI/UX & Web', 'เว็บแอปพลิเคชันค้นหาคาเฟ่ Specialty Coffee และร้านกาแฟบรรยากาศดีในจังหวัดนครศรีธรรมราชและภาคใต้ พร้อมระบบคัดกรองเมล็ดกาแฟ บรรยากาศ และพิกัดแผนที่', 'Figma,HTML5,CSS3,JavaScript,Geolocation', 'assets/images/project-cafe.svg')">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="#contact" class="overlay-btn" title="สอบถามโปรเจกต์นี้">
+                  <i class="bi bi-chat-text-fill"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">UI/UX &amp; Web Design</div>
+              <h3 class="project-title">SlowBar &amp; Nakhon Cafe Explorer</h3>
+              <p class="project-text">
+                แรงบันดาลใจจากงานอดิเรก สู่แอปค้นหาคาเฟ่ในนครศรีธรรมราชและแหล่งเมล็ดกาแฟ Specialty โทนสีอบอุ่นสไตล์ Warm Minimal
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Figma to Code</span>
+                <span class="tech-badge">Responsive</span>
+                <span class="tech-badge">Interactive Filter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Health & Habit Tracker -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="web">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-health.svg" alt="ภาพตัวอย่าง VitaPulse Tracker" class="project-img">
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" title="ดูรายละเอียด" onclick="openProjectModal('VitaPulse Daily Habit & Wellness', 'เว็บแอปพลิเคชัน (Web App)', 'เว็บแอปพลิเคชันติดตามพฤติกรรมสุขภาพประจำวัน เช่น การดื่มน้ำ การออกกำลังกาย การบันทึกอารมณ์ และการนอนหลับ พร้อมระบบ Streak และรางวัลเมื่อทำตามเป้าหมายต่อเนื่อง', 'HTML5,CSS3,JavaScript,LocalStorage,Bootstrap 5', 'assets/images/project-health.svg')">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="#contact" class="overlay-btn" title="สอบถามโปรเจกต์นี้">
+                  <i class="bi bi-chat-text-fill"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Web Application</div>
+              <h3 class="project-title">VitaPulse Daily Wellness Tracker</h3>
+              <p class="project-text">
+                แอปพลิเคชันบันทึกกิจวัตรเพื่อสุขภาพ มีระบบคำนวณความต่อเนื่อง (Streaks) และบันทึกข้อมูลแบบออฟไลน์ผ่าน LocalStorage
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5/CSS3</span>
+                <span class="tech-badge">LocalStorage</span>
+                <span class="tech-badge">CSS Animations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Creative UI Kit -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="creative">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-portfolio.svg" alt="ภาพตัวอย่าง AuraDesign UI System" class="project-img">
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" title="ดูรายละเอียด" onclick="openProjectModal('AuraDesign UI System & Kit', 'โปรเจกต์สร้างสรรค์ (Creative)', 'ระบบดีไซน์คอมโพเนนต์ระดับพรีเมียม ประกอบด้วยปุ่ม ไอคอน ฟอร์ม และธีมสีที่รองรับการใช้งานร่วมกับ Bootstrap 5 และ Vanilla CSS ช่วยให้นักพัฒนาสร้างเว็บที่ดูมืออาชีพได้รวดเร็ว', 'Design System,CSS Variables,Bootstrap 5,SVG Icons', 'assets/images/project-portfolio.svg')">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="#contact" class="overlay-btn" title="สอบถามโปรเจกต์นี้">
+                  <i class="bi bi-chat-text-fill"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Creative Design System</div>
+              <h3 class="project-title">AuraDesign UI System &amp; Tokens</h3>
+              <p class="project-text">
+                ชุดคอมโพเนนต์ดีไซน์สำเร็จรูปโทนโมเดิร์นกลาสมอร์ฟิก พร้อมระบบคู่สี Contrast สูงที่ได้มาตรฐาน Web Accessibility
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">CSS Tokens</span>
+                <span class="tech-badge">UI Library</span>
+                <span class="tech-badge">Accessibility</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. Hobbies & Interests Section (Highlight Feature)
+       ========================================== -->
+  <section class="hobbies-section" id="hobbies">
+    <div class="container">
+      
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-stars"></i> ไลฟ์สไตล์ &amp; งานอดิเรก</span>
+        <h2 class="section-title">งานอดิเรกที่ณิชมน ชลสาครรัก <span class="text-gradient">&amp; แรงบันดาลใจ</span></h2>
+        <p class="section-subtitle">
+          นอกเหนือจากเวลาเรียนและการเขียนโค้ด งานอดิเรกเหล่านี้คือพื้นที่เติมพลังความคิดสร้างสรรค์ และช่วยเสริมมุมมองในการทำงานอย่างลงตัว
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Hobby 1: Digital Art -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card hobby-card">
+            <div class="hobby-icon-circle hobby-art">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h3 class="hobby-title">🎨 วาดภาพดิจิทัล &amp; กราฟิก</h3>
+            <p class="hobby-desc">
+              ชอบใช้เวลาว่างวาดภาพเวกเตอร์ ออกแบบตัวละคร และสร้างภาพประกอบดิจิทัล การได้ทดลองผสมสีและสร้างสรรค์ภาพช่วยจุดประกายไอเดียใหม่ ๆ อยู่เสมอ
+            </p>
+            <div class="hobby-benefit-box">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>เสริมทักษะงาน:</strong> ช่วยพัฒนาความเข้าใจด้าน Visual Hierarchy การจับคู่สี และการจัดองค์ประกอบหน้าเว็บให้โดดเด่น
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 2: Photography -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card hobby-card">
+            <div class="hobby-icon-circle hobby-photo">
+              <i class="bi bi-camera"></i>
+            </div>
+            <h3 class="hobby-title">📸 ถ่ายภาพ &amp; คุมโทนสีในนครศรีฯ</h3>
+            <p class="hobby-desc">
+              บันทึกภาพสถานที่สวยงาม บรรยากาศธรรมชาติ และแลนด์มาร์กในจังหวัดนครศรีธรรมราช เพลิดเพลินกับการแต่งภาพและคุม Mood &amp; Tone ให้อบอุ่น
+            </p>
+            <div class="hobby-benefit-box">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>เสริมทักษะงาน:</strong> ฝึกสายตาให้สังเกตแสง เงา และระยะเว้นวรรค (Whitespace) ที่ส่งผลโดยตรงต่อความสบายตาของเว็บไซต์
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 3: Specialty Coffee & Cafe Hopping -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card hobby-card">
+            <div class="hobby-icon-circle hobby-coffee">
+              <i class="bi bi-cup-hot"></i>
+            </div>
+            <h3 class="hobby-title">☕ คาเฟ่ฮอปปิ้ง &amp; กาแฟ</h3>
+            <p class="hobby-desc">
+              หลงใหลในกลิ่นหอมของกาแฟ และการออกไปสำรวจคาเฟ่ที่มีการตกแต่งดีไซน์มินิมอลในนครศรีธรรมราช เพื่อหาแรงบันดาลใจในการจัดวางเลย์เอาต์เว็บ
+            </p>
+            <div class="hobby-benefit-box">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>เสริมทักษะงาน:</strong> การชิมกาแฟและสำรวจพื้นที่ช่วยฝึกความละเอียดลึกซึ้ง และเปิดรับสไตล์การออกแบบที่หลากหลาย
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 4: Reading & Tech Podcasts -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card hobby-card">
+            <div class="hobby-icon-circle hobby-reading">
+              <i class="bi bi-book"></i>
+            </div>
+            <h3 class="hobby-title">📚 อ่านหนังสือ &amp; ฟังพอดแคสต์</h3>
+            <p class="hobby-desc">
+              ติดตามบทความเทคโนโลยี นวัตกรรมดิจิทัล และหนังสือแนวจิตวิทยาการพัฒนาตนเอง ฟังพอดแคสต์เกี่ยวกับการออกแบบผลิตภัณฑ์และเรื่องราวนักสร้างสรรค์
+            </p>
+            <div class="hobby-benefit-box">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>เสริมทักษะงาน:</strong> เพิ่มพูนความรู้รอบด้าน ทันต่อแนวโน้มโลกดิจิทัล และได้แนวคิดการแก้ปัญหาใหม่ ๆ มาประยุกต์ใช้ในโค้ด
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 5: Indoor Plants & Gardening -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card hobby-card">
+            <div class="hobby-icon-circle hobby-plants">
+              <i class="bi bi-flower1"></i>
+            </div>
+            <h3 class="hobby-title">🪴 ปลูกต้นไม้ฟอกอากาศในร่ม</h3>
+            <p class="hobby-desc">
+              ดูแลต้นไม้เล็ก ๆ รอบโต๊ะทำงาน เช่น มอนสเตอร่า พลูด่าง และแคคตัส การได้รดน้ำและเฝ้าดูการผลิใบทำให้รู้สึกเชื่อมต่อกับธรรมชาติ
+            </p>
+            <div class="hobby-benefit-box">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>เสริมทักษะงาน:</strong> สร้างสภาพแวดล้อมการทำงานที่สดชื่น ผ่อนคลายสายตาจากหน้าจอคอมพิวเตอร์ และช่วยฟื้นฟูสมาธิ
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 6: Lo-Fi Music & Acoustic Sounds -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card hobby-card">
+            <div class="hobby-icon-circle hobby-music">
+              <i class="bi bi-headphones"></i>
+            </div>
+            <h3 class="hobby-title">🎵 ดนตรี Lo-Fi &amp; เพลย์ลิสต์โฟกัส</h3>
+            <p class="hobby-desc">
+              การจัด Playlist เพลงบรรเลงเบา ๆ ช่วยสร้างบรรยากาศแห่งสมาธิ (Flow State) ระหว่างเขียนโค้ดและช่วยให้เกิดสุนทรียภาพในการทำงาน
+            </p>
+            <div class="hobby-benefit-box">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>เสริมทักษะงาน:</strong> เพิ่มโฟกัสและความต่อเนื่องในการเขียนโปรแกรม ช่วยให้แก้โจทย์ซับซ้อนได้อย่างราบรื่น
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. Contact Section
+       ========================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-envelope-heart-fill"></i> ติดต่อร่วมงาน</span>
+        <h2 class="section-title">ร่วมงานหรือพูดคุยกับ <span class="text-gradient">ณิชมน ชลสาคร</span></h2>
+        <p class="section-subtitle">
+          สามารถติดต่อพูดคุย สอบถามเกี่ยวกับผลงาน หรือโอกาสการฝึกประสบการณ์วิชาชีพได้ตลอดเวลาค่ะ
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Contact Information Card with EXACT required email & location -->
+        <div class="col-lg-5">
+          <div class="glass-card contact-card-info">
+            <h3 class="h4 fw-bold mb-4">ข้อมูลการติดต่อ</h3>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="bi bi-envelope-at-fill"></i>
+              </div>
+              <div class="contact-meta">
+                <h6>อีเมล (Email)</h6>
+                <a href="mailto:nitchamon.cho@nvc.ac.th" class="fw-semibold text-primary">nitchamon.cho@nvc.ac.th</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="contact-meta">
+                <h6>สถานศึกษา (Institution)</h6>
+                <p class="mb-0 text-muted">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="contact-meta">
+                <h6>ที่อยู่ (Location)</h6>
+                <p class="mb-0 text-muted">นครศรีธรรมราช, ประเทศไทย</p>
+              </div>
+            </div>
+
+            <div class="contact-item mb-0">
+              <div class="contact-icon-box">
+                <i class="bi bi-briefcase-fill"></i>
+              </div>
+              <div class="contact-meta">
+                <h6>สถานะ</h6>
+                <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-1">
+                  พร้อมรับงาน &amp; ฝึกประสบการณ์ (Internship / Project)
+                </span>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="pt-2">
+              <h6 class="fw-bold mb-3">ติดตามผลงานเพิ่มเติม:</h6>
+              <div class="d-flex gap-2">
+                <a href="mailto:nitchamon.cho@nvc.ac.th" class="social-icon-circle" aria-label="ส่งอีเมล">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="col-lg-7">
+          <div class="glass-card p-4 p-md-5">
+            <h3 class="h4 fw-bold mb-3">ส่งข้อความถึงณิชมน ชลสาคร</h3>
+            <p class="text-muted small mb-4">กรอกข้อมูลในแบบฟอร์มด้านล่างเพื่อส่งข้อความโดยตรง ระบบจะแจ้งเตือนทันทีค่ะ</p>
+
+            <form id="contactForm" novalidate>
+              
+              <div class="row g-3">
+                
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="senderName" placeholder="ชื่อของคุณ" required>
+                    <label for="senderName"><i class="bi bi-person me-1"></i> ชื่อ-นามสกุล หรือองค์กร *</label>
+                    <div class="invalid-feedback">กรุณากรอกชื่อของคุณค่ะ</div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="senderEmail" placeholder="อีเมลของคุณ" required>
+                    <label for="senderEmail"><i class="bi bi-envelope me-1"></i> อีเมลสำหรับติดต่อกลับ *</label>
+                    <div class="invalid-feedback">กรุณากรอกอีเมลที่ถูกต้องค่ะ</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="senderSubject" placeholder="หัวข้อเรื่อง" required>
+                    <label for="senderSubject"><i class="bi bi-chat-left-text me-1"></i> หัวข้อเรื่อง *</label>
+                    <div class="invalid-feedback">กรุณาระบุหัวข้อเรื่องค่ะ</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="senderMessage" placeholder="ข้อความของคุณ" style="height: 140px" required></textarea>
+                    <label for="senderMessage"><i class="bi bi-pencil me-1"></i> รายละเอียดข้อความ *</label>
+                    <div class="invalid-feedback">กรุณาระบุข้อความที่ต้องการส่งค่ะ</div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-modern-primary w-100 justify-content-center py-3 fs-6">
+                    <i class="bi bi-send-fill"></i>
+                    <span>ส่งข้อความหาณิชมน ชลสาคร</span>
+                  </button>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. Footer Section
+       ========================================== -->
+  <footer class="footer-custom text-center">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-md-start">
+          <div class="fw-bold fs-5 text-main">
+            Nitchamon<span class="text-gradient"> Chonsakorn</span>
+          </div>
+          <div class="small text-muted">นางสาวณิชมน ชลสาคร</div>
+          <div class="small text-muted">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+        </div>
+        <div class="col-md-4">
+          <div class="small text-muted">
+            ออกแบบและสร้างสรรค์ด้วยความใส่ใจ ❤️ <br>
+            HTML5 • CSS3 • Bootstrap 5 • JavaScript
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div class="small text-muted">
+            &copy; 2026 Nitchamon Chonsakorn. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       9. Floating Back to Top Button
+       ========================================== -->
+  <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="กลับขึ้นด้านบน">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- ==========================================
+       10. Project Details Modal
+       ========================================== -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-0" style="background: var(--bg-card);">
+        
+        <div class="modal-header border-bottom border-light-subtle">
+          <div>
+            <span class="badge bg-primary-subtle text-primary mb-1" id="projectModalCategory">หมวดหมู่</span>
+            <h4 class="modal-title fw-bold" id="projectModalLabel">ชื่อโปรเจกต์</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          <div class="rounded-3 overflow-hidden mb-4" style="max-height: 340px;">
+            <img src="" alt="ภาพตัวอย่างโปรเจกต์" id="projectModalImg" class="w-100 h-100 object-fit-cover">
+          </div>
+          
+          <h5 class="fw-bold mb-2">รายละเอียดโครงการ</h5>
+          <p class="text-muted leading-relaxed" id="projectModalDesc">คำอธิบาย</p>
+
+          <h6 class="fw-bold mt-4 mb-2">เทคโนโลยีที่ใช้ในโปรเจกต์นี้:</h6>
+          <div id="projectModalTags" class="d-flex flex-wrap gap-1"></div>
+        </div>
+
+        <div class="modal-footer border-top border-light-subtle">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+          <a href="#contact" class="btn-modern-primary py-2 px-4 text-decoration-none" onclick="bootstrap.Modal.getInstance(document.getElementById('projectDetailModal')).hide()">
+            <i class="bi bi-chat-fill"></i>
+            <span>สนใจแนวทางนี้</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       11. Toast Notification Container
+       ========================================== -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div id="contactToast" class="toast glass-card border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header border-0 bg-transparent text-main">
+        <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+        <strong class="me-auto fs-6">ส่งข้อความเรียบร้อย!</strong>
+        <small class="text-muted">เมื่อสักครู่</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="ปิด"></button>
+      </div>
+      <div class="toast-body text-muted pt-0 pb-3" id="toastMessage">
+        ขอบคุณสำหรับการติดต่อ ณิชมนจะรีบตอบกลับโดยเร็วที่สุดค่ะ!
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
